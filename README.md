@@ -1,5 +1,7 @@
 # Frontend Mentor - Fylo landing page with dark theme and features grid
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49563258-6489-4908-9cfa-b4ec20b5ec41/deploy-status)](https://app.netlify.com/sites/fylo-dark-theme-landing-page-challenge/deploys)
+
 ![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
