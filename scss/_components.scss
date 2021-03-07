@@ -48,9 +48,21 @@
 	/* 	overflow: hidden; */
 	padding: 2rem;
 	margin: 1rem;
+	position: relative;
 	/* 	width: 320px;
  */
 	animation: slideInFromTop 500ms ease-in;
+
+	&:first-child {
+		&::before {
+			content: url("../images/bg-quotes.png");
+			position: absolute;
+			z-index: -1;
+			top: -3rem;
+			left: -2rem;
+			transform: scale(0.75);
+		}
+	}
 
 	&__header {
 		display: flex;
