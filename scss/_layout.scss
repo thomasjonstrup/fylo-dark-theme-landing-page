@@ -29,3 +29,116 @@
 		text-align: center;
 	}
 }
+
+// About
+.about {
+	padding-bottom: 10rem;
+
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+		align-items: center;
+		flex-direction: column;
+
+		@include breakpoint-up(medium) {
+			flex-direction: row;
+		}
+	}
+	&__link {
+		position: relative;
+		color: $cyan;
+		&::before {
+			content: "";
+			position: absolute;
+			height: 0.1rem;
+			width: 15rem;
+			bottom: -0.2rem;
+			background: $cyan; //linear-gradient(to right, $cyan, $blue);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 15rem;
+			height: 15rem;
+			background-image: url("../images/icon-arrow.svg");
+			background-repeat: no-repeat;
+			top: 0.2rem;
+		}
+	}
+}
+
+// CTA
+.cta {
+	margin: auto;
+	max-width: 110rem;
+	width: 85%;
+	padding: 2rem;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 30%);
+	border-radius: 0.8rem;
+	background-color: $dark-blue-main;
+	position: relative;
+}
+
+// Footer
+.footer {
+	background-color: $dark-blue-footer;
+	margin-top: -5rem;
+	padding-top: 10rem;
+	padding-bottom: 4rem;
+	&__logo {
+		width: 12rem;
+		padding-bottom: 2rem;
+	}
+	@include breakpoint-up(medium) {
+		&__bottom {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 4rem;
+		}
+	}
+
+	&__icon {
+		font-size: 2rem;
+		color: $white;
+	}
+	&__socials {
+		@include flexbox;
+		justify-content: center;
+		align-content: center;
+		gap: 2rem;
+	}
+	&__image {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	&__info {
+		display: flex;
+		gap: 2rem;
+		padding-bottom: 2rem;
+	}
+	&__social {
+		border: 0.1rem solid $white;
+		width: 4rem;
+		height: 4rem;
+		padding: 1rem;
+		border-radius: 50%;
+		@include flexbox;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__attribution {
+		font-size: 1.1rem;
+		text-align: center;
+
+		a {
+			color: $cyan;
+		}
+
+		animation: slideInFromBottom 500ms ease-in;
+	}
+}

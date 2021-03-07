@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/main.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
 		<!-- displays site properly based on user's device -->
 
 		<link
@@ -64,7 +70,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="features grid container">
+			<section class="features grid container m-b-4">
 				<article class="feature">
 					<div class="feature__image m-b-2">
 						<img
@@ -130,22 +136,179 @@
 					</p>
 				</article>
 			</section>
-			<section class="about"></section>
-			<section class="testimonials"></section>
-			<section class="call-to-action"></section>
+			<section class="about">
+				<div class="container about__flex">
+					<div class="about__image">
+						<img
+							src="./images/illustration-stay-productive.png"
+							alt="illustration-stay-productive"
+						/>
+					</div>
+					<div class="about__texts">
+						<h2 class="about__heading">
+							Stay productive, wherever you are.
+						</h2>
+						<p class="about__description m-b-2">
+							Never let location be an issue when accessing your
+							files. Fylo has you covered for all of your file
+							storage needs.
+						</p>
+						<p class="about__description m-b-2">
+							Securely share files and folders with friends,
+							family and colleagues for live collaboration. No
+							email attachments required.
+						</p>
+						<a href="#" class="about__link">
+							See how Fylo works.
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials m-b-8">
+				<div class="container grid">
+					<article class="card">
+						<p class="card__info p-b-2">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="card__bottom">
+							<div class="card__image">
+								<img
+									src="./images/profile-1.jpg"
+									alt="profile-1"
+								/>
+							</div>
+							<div class="card__wrapper">
+								<p class="card__name">Satish Patel</p>
+								<p class="card__title">Founder & CEO, Huddle</p>
+							</div>
+						</div>
+					</article>
+					<article class="card">
+						<p class="card__info p-b-2">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="card__bottom">
+							<div class="card__image">
+								<img
+									src="./images/profile-2.jpg"
+									alt="profile-2"
+								/>
+							</div>
+							<div class="card__wrapper">
+								<p class="card__name">Bruce McKenzie</p>
+								<p class="card__title">Founder & CEO, Huddle</p>
+							</div>
+						</div>
+					</article>
+					<article class="card">
+						<p class="card__info p-b-2">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="card__bottom">
+							<div class="card__image">
+								<img
+									src="./images/profile-3.jpg"
+									alt="profile-3"
+								/>
+							</div>
+							<div class="card__wrapper">
+								<p class="card__name">Iva Boyd</p>
+								<p class="card__title">Founder & CEO, Huddle</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="cta">
+				<h2 class="cta__heading">Get early access today</h2>
+				<p class="cta__description">
+					It only takes a minute to sign up and our free starter tier
+					is extremely generous. If you have any questions, our
+					support team would be happy to help you.
+				</p>
+			</section>
 		</main>
 
 		<footer class="footer">
-			<p class="attribution">
-				Challenge by
-				<a
-					href="https://www.frontendmentor.io?ref=challenge"
-					target="_blank"
-					>Frontend Mentor</a
-				>. Coded by
-				<a href="https://github.com/thomasjonstrup/">Thomas Jonstrup</a
-				>.
-			</p>
+			<div class="container">
+				<div class="footer__logo">
+					<img src="./images/logo.svg" alt="logo" />
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__content m-b-8">
+						<ul>
+							<li class="footer__info">
+								<img
+									src="./images/icon-location.svg"
+									alt="icon-location"
+									class="footer__image"
+								/>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+							</li>
+							<li class="footer__info">
+								<img
+									src="./images/icon-phone.svg"
+									alt="icon-phone"
+									class="footer__image"
+								/>+1-543-123-4567
+							</li>
+							<li class="footer__info">
+								<img
+									src="./images/icon-email.svg"
+									alt="icon-email"
+									class="footer__image"
+								/>example@fylo.com
+							</li>
+						</ul>
+					</div>
+					<div class="footer__nav m-b-4">
+						<ul>
+							<li>About Us</li>
+							<li>Press</li>
+							<li>Blog</li>
+						</ul>
+					</div>
+					<div class="footer__nav m-b-4">
+						<ul>
+							<li>Contact Us</li>
+							<li>Terms</li>
+							<li>Privacy</li>
+						</ul>
+					</div>
+					<div class="footer__socials">
+						<a href="#" class="footer__link footer__social">
+							<i class="fab fa-facebook-f footer__icon"></i>
+						</a>
+						<a href="#" class="footer__link footer__social">
+							<i class="fab fa-twitter footer__icon"></i>
+						</a>
+						<a href="#" class="footer__link footer__social">
+							<i class="fab fa-instagram footer__icon"></i>
+						</a>
+					</div>
+				</div>
+				<p class="footer__attribution p-t-2 p-b-2">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by
+					<a href="https://github.com/thomasjonstrup/"
+						>Thomas Jonstrup</a
+					>.
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>
