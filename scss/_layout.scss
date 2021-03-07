@@ -7,6 +7,19 @@
 @use "sass:math" as math;
 
 .hero {
+	background-image: url("../images/bg-curvy-mobile.svg");
+	background-color: $dark-blue-intro;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	@include breakpoint-up(medium) {
+		background-image: url("../images/bg-curvy-desktop.svg");
+	}
+
 	&__image {
 		/* 	max-width: 60rem; */
 		/* 		margin: 0 auto; */

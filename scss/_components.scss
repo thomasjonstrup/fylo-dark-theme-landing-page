@@ -108,6 +108,7 @@
 /* HEADER */
 
 .header {
+	background-color: $dark-blue-intro;
 	&__logo {
 		height: auto;
 		width: 12vw;
@@ -125,6 +126,22 @@
 		width: 90%;
 	}
 }
+
+/* Feature */
+.feature {
+	text-align: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__image {
+		width: 10rem;
+	}
+}
+
+// Nav
 
 .nav {
 	&__menu {

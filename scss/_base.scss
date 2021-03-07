@@ -217,8 +217,14 @@ $breakpoints-down: (
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+
+	grid-template-columns: repeat(1, 1fr);
+
+	@include breakpoint-up(medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	gap: 2rem;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -233,8 +239,8 @@ $breakpoints-down: (
 }
 
 // Mixins
-$max: 50;
-$offset: 5;
+$max: 20;
+$offset: 1;
 $unit: "rem";
 
 @mixin generate-styling($className, $styleName) {
