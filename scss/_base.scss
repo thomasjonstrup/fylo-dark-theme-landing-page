@@ -210,7 +210,7 @@ $breakpoints-down: (
 	grid-template-columns: repeat(1, 1fr);
 
 	@include breakpoint-up(medium) {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	gap: 2rem;

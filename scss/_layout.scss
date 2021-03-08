@@ -9,7 +9,7 @@
 .hero {
 	background-image: url("../images/bg-curvy-mobile.svg");
 	background-color: $dark-blue-intro;
-	padding-top: 4rem;
+	/* 	padding-top: 4rem; */
 	padding-bottom: 3rem;
 
 	background-position: bottom;
@@ -21,8 +21,8 @@
 	}
 
 	&__image {
-		/* 	max-width: 60rem; */
-		/* 		margin: 0 auto; */
+		max-width: 65rem;
+		margin: 0 auto;
 	}
 
 	&__texts {
