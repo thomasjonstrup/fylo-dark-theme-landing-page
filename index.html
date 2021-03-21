@@ -26,9 +26,11 @@
 	<body>
 		<header class="header">
 			<div class="header__content container">
-				<div class="header__logo">
-					<img src="./images/logo.svg" alt="logo" />
-				</div>
+				<a href="#">
+					<div class="header__logo">
+						<img src="./images/logo.svg" alt="logo" />
+					</div>
+				</a>
 				<nav class="nav">
 					<ul class="nav__menu">
 						<li class="nav__item">
@@ -166,7 +168,7 @@
 			</section>
 			<section class="testimonials m-b-8">
 				<div class="container grid">
-					<article class="card">
+					<div class="card">
 						<p class="card__info p-b-2">
 							Fylo has improved our team productivity by an order
 							of magnitude. Since making the switch our team has
@@ -184,8 +186,8 @@
 								<p class="card__title">Founder & CEO, Huddle</p>
 							</div>
 						</div>
-					</article>
-					<article class="card">
+					</div>
+					<div class="card">
 						<p class="card__info p-b-2">
 							Fylo has improved our team productivity by an order
 							of magnitude. Since making the switch our team has
@@ -203,8 +205,8 @@
 								<p class="card__title">Founder & CEO, Huddle</p>
 							</div>
 						</div>
-					</article>
-					<article class="card">
+					</div>
+					<div class="card">
 						<p class="card__info p-b-2">
 							Fylo has improved our team productivity by an order
 							of magnitude. Since making the switch our team has
@@ -222,7 +224,7 @@
 								<p class="card__title">Founder & CEO, Huddle</p>
 							</div>
 						</div>
-					</article>
+					</div>
 				</div>
 			</section>
 			<section class="cta">
@@ -232,16 +234,18 @@
 					is extremely generous. If you have any questions, our
 					support team would be happy to help you.
 				</p>
-				<form action="" class="form">
+				<div class="form">
 					<input
 						type="text"
+						title="email"
+						aria-label="email input"
 						class="form__input"
 						placeholder="example@email.com"
 					/>
 					<button class="btn btn--primary">
 						Get Started For Free
 					</button>
-				</form>
+				</div>
 			</section>
 		</main>
 
