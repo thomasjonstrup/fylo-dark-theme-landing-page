@@ -79,6 +79,10 @@
 	border-radius: 0.8rem;
 	background-color: $dark-blue-main;
 	position: relative;
+
+	&__description {
+		padding-bottom: 2rem;
+	}
 }
 
 // Footer
@@ -97,6 +101,14 @@
 			flex-direction: row;
 			justify-content: space-between;
 			gap: 4rem;
+		}
+	}
+
+	&__link {
+		color: $white;
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 
